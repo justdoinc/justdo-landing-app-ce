@@ -1,0 +1,29 @@
+<template name="header">
+  <nav class="navbar {{#if dualFrame}}duel-frame{{else}}single-frame{{/if}}">
+    <a class="brand" href="{{i18nRoute route="main_page"}}">
+      <svg><use xlink:href="/layout/icons-feather-sprite.svg#logo"></use></svg>
+    </a>
+    <div class="navbar-menu">
+      <ul class="navbar-nav">
+        {{#unless loginOnlyLayout}}
+          <li class="nav-item"><a class="nav-link {{isActivePage 'pricing'}}" href="{{i18nRoute route="pricing"}}">{{_ "header_pricing"}}</a></li>
+          <li class="nav-item"><a class="nav-link {{isActivePage 'news'}}" href="{{i18nRoute route="news_page"}}">{{_ "header_news"}}</a></li>
+          <li class="nav-item"><a class="nav-link {{isActivePage 'plugins'}}" href="{{i18nRoute route="plugins_store"}}">{{_ "plugin_store_title"}}</a></li>
+        {{/unless}}
+        <li class="nav-item"><a class="nav-link {{isActivePage 'contact'}}" href="{{i18nRoute route="contact"}}">{{_ "header_contact"}}</a></li>
+        {{#unless loginOnlyLayout}}
+          {{#unless signInPage}}
+            <li class="try-for-free {{#if isJustdoAiEnabled}}ai-landing{{/if}}"><a class="nav-link" href="{{i18nRoute route="sign_in"}}">{{_ "header_try_for_free"}}</a></li>
+            <li class="{{#if isJustdoAiEnabled}}nav-item{{else}}sign-in{{/if}}"><a class="nav-link" href="{{i18nRoute route="sign_in"}}">{{_ "header_sign_in"}}</a></li>
+          {{/unless}}
+        {{/unless}}
+      </ul>
+      {{> lang_selector_dropdown}}
+      <svg class="jd-icon jd-c-pointer menu-icon {{#if dualFrame}}d-lg-none d-flex{{/if}}"><use xlink:href="/layout/icons-feather-sprite.svg#menu"></use></svg>
+    </div>
+  </nav>
+</template>
+
+<template name="justdo_header_login_button">
+  <button type="button" class="justdo-login btn btn-primary font-weight-bold text-uppercase rounded-pill px-3" href="#">{{_ "header_sign_in"}}</button>
+</template>

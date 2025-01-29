@@ -1,0 +1,12 @@
+{
+  "contact_title": "Sazinies ar mums",
+  "contact_subtitle": "Sazinies ar JustDo ekspertu atbalsta komandu. Pieprasi palīdzību, izpēti funkcijas vai piesakies demonstrācijai jau šodien.",
+  "email_us_title": "Sūti mums e-pastu",
+  "email_us_subtitle": "Vēlies sazināties ar mums tieši pa e-pastu? Nekādu problēmu! Vari mūs sasniegt, izmantojot šādas e-pasta adreses:",
+  "technical_support_email": "Tehniskais atbalsts: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Demonstrācijas pieprasījumi, funkciju pieprasījumi un citi jautājumi: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Iesniegt",
+  "contact_name_placeholder": "Vārds",
+  "contact_email_placeholder": "E-pasts",
+  "contact_message_placeholder": "Ziņojums"
+}

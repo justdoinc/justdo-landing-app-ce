@@ -1,0 +1,306 @@
+<template name="login_box">
+  <div class="main-box main-box-{{main_box_class}}">
+    <div class="p-2">
+      {{#if $not initialUserStateReady}}
+        {{> main_page_loading message="Getting Ready..."}}
+      {{else}}
+        {{#if $not isAccountsPasswordEnabled}}
+          {{#if loginStateIs "logged-in" "loading"}}
+            {{> loggedin_state}}
+          {{else if isPostLoginEnrollment}}
+            {{> loggedin_state}}
+          {{else if stateEq "initial"}}
+            {{> sign_in_sign_up_title}}
+
+            {{> oauth_services_list}}
+
+            {{> sign_in_up_toggler}}
+          {{else if loginStateIs "logged-out"}}
+            {{> loggedin_state}}
+          {{/if}}
+        {{else}}
+          <span class="exit-bold-main-box jd-c-pointer position-absolute">
+            <svg class="jd-icon jd-icon-32 text-primary"><use xlink:href="/layout/icons-feather-sprite.svg#x"/></svg>
+          </span>
+
+          {{#if loginStateIs "email-verification"}}
+            {{> main_page_loading message="Completing Registration..."}}
+          {{/if}}
+
+          {{#if loginStateIs "email-verification-expired"}}
+            {{> main_page_expiration_warning title="Registration Expired" warning="Sorry, we can't complete the registration process with this invite any longer."}}
+          {{/if}}
+
+          {{#if loginStateIs "reset-password"}}
+            {{> special_login_processes_user_details}}
+            {{> reset_password}}
+          {{/if}}
+
+          {{#if loginStateIs "reset-password-expired"}}
+            {{> main_page_expiration_warning title="Password Reset Expired" warning="Sorry, we can't reset your password using this email any longer."}}
+          {{/if}}
+
+          {{#if loginStateIs "enrollment"}}
+            {{> special_login_processes_user_details}}
+            {{> register_enroll_state}}
+          {{/if}}
+
+          {{#if loginStateIs "enrollment-expired"}}
+            {{> main_page_loading message="Getting Ready..."}}
+          {{/if}}
+
+          {{#if loginStateIs "logged-in" "logged-out" "loading"}}
+            {{#if loggedin_user}}
+              <div class="profile-pic text-center mb-3">
+                {{#with loggedin_user}}
+                  {{> justdo_avatar}}
+                {{/with}}
+              </div>
+              <p class="mail text-center text-dark">
+                {{user_email}}
+              </p>
+              {{> loggedin_state}}
+            {{else}}
+              {{#if stateNeq "initial" "loggedin"}}
+                <div class="back-arrow-wrapper jd-c-pointer position-absolute">
+                  <svg class="jd-icon jd-icon-32 {{#if isRtl}}fa-flip-horizontal{{/if}}"><use xlink:href="/layout/icons-feather-sprite.svg#arrow-left"/></svg>
+                </div>
+              {{/if}}
+
+              {{#if stateNeq "initial"}}
+                <div class="profile-pic text-center mb-3">
+                  {{> justdo_avatar profile_pic=profile_pic email=email_entered first_name=first_name last_name=last_name}}
+                </div>
+              {{/if}}
+
+              {{#if stateNeq "initial" "loggedin"}}
+                <p class="mail text-center text-dark">{{email_entered}}</p>
+              {{/if}}
+
+              {{#if stateEq "initial"}}
+                {{> initial_state}}
+              {{/if}}
+
+              {{#if stateEq "register"}}
+                {{> register_enroll_state}}
+              {{/if}}
+
+              {{#if stateEq "login"}}
+                {{> login_state}}
+              {{/if}}
+
+              {{> oauth_services_list}}
+
+              {{#if stateEq "initial"}}
+                {{> sign_in_up_toggler}}
+              {{/if}}
+
+            {{/if}}
+          {{/if}}
+        {{/if}}
+      {{/if}}
+
+      <div class="d-flex justify-content-between">
+        <a href="https://play.google.com/store/apps/details?id=com.justdo.justdogo&hl=en&gl=US" class="btn btn-dark btn-app-store google-store" target="_blank">
+          <span class="icon-google-play"></span>
+          {{_ "menu_google_store"}}
+        </a>
+        <a href="https://apps.apple.com/us/app/justdo-go/id1583902022" class="btn btn-dark btn-app-store apple-store" target="_blank">
+          <span class="icon-apple"></span>
+          {{_ "menu_app_store"}}
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="oauth_services_list">
+  {{> login_with_google_oauth}}
+
+  {{> login_with_azure_ad}}
+</template>
+
+<template name="sign_in_up_toggler">
+  <p class="toggle-main-box-captions-mode text-center text-dark">
+    {{#if $eq mainBoxCaptionMode "sign-in"}}
+      {{_ "login_no_account"}} <a href="#">{{_ "login_sign_up_now"}}</a>
+    {{else}}
+      {{_ "login_already_have_an_account"}} <a href="#">{{_ "sign_in"}}</a>
+    {{/if}}
+  </p>
+</template>
+
+<!-- Special Login process -->
+<template name="special_login_processes_user_details">
+  <div class="profile-pic text-center mb-3">
+    {{> justdo_avatar profile_pic=profile_pic email=email first_name=first_name last_name=last_name}}
+  </div>
+  <p class="mail text-center text-dark">{{email}}</p>
+</template>
+
+<template name="sign_in_sign_up_title">
+  <h1 class="sign-in-sign-up-title text-center mb-4 text-dark font-weight-bold">
+    {{#if $eq page "promoters"}}
+      {{#if $eq mainBoxCaptionMode "sign-in"}}
+        Sign in as a Promoter
+      {{else}}
+        Become A Promoter
+      {{/if}}
+    {{else if $eq mainBoxCaptionMode "sign-in"}}
+      {{sign_in_message}}
+    {{else}}
+      {{sign_up_message}}
+    {{/if}}
+  </h1>
+</template>
+
+<!-- Initial state -->
+<template name="initial_state">
+  {{> sign_in_sign_up_title}}
+
+  <iframe id="pseudo-form-receiver" name="pseudo-form-receiver" style="display: none;" src="about:blank"></iframe>
+  <form id="pseudo-form-sender" target="pseudo-form-receiver" method="post" action="/pseudo-form-receiver">
+    <div class="form-group">
+      <input type="email" name="email" placeholder="{{_ "login_enter_your_email"}}" value="{{email_entered}}" class="email-login form-control form-control-lg {{#if invalid_email}}is-invalid{{/if}}" />
+      <small class="form-text text-danger validation-error">{{display_validation_error "invalid_email_input" "invalid_email_format" "technical_error"}}</small>
+      <small class="form-text text-muted password-flow-forbidden-for-user-notice">{{display_validation_error "password_flow_forbidden_for_user"}}</small>
+    </div>
+    <button class="next-button btn btn-lg btn-block mb-3 {{#if is_loading}}disabled{{/if}}" type="submit" disabled="{{#if is_loading}}disabled{{/if}}">{{_ "next"}}</button>
+  </form>
+</template>
+
+<!-- Sign Up Form -->
+<template name="register_enroll_state">
+  <iframe id="pseudo-form-receiver" name="pseudo-form-receiver" style="display: none;" src="about:blank"></iframe>
+  <form id="pseudo-form-sender" target="pseudo-form-receiver" method="post" action="/pseudo-form-receiver">
+    <div class="text-center mb-4 text-dark">{{_ "welcome_to_justdo"}}!<br>
+      {{#if $eq page "promoters"}}
+        Please complete the following to join JustDo and become a Promoter
+      {{else}}
+        {{_ "login_please_complete_the_following_to_get_going"}}
+      {{/if}}
+    </div>
+    <div class="register-wrapper">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input name="given-name" value="{{initial_first_name}}" type="text" placeholder="{{_ "first_name"}}" class="first-name form-control form-control-lg {{#if invalid_first_name}}is-invalid{{/if}}" />
+          <small class="form-text text-danger validation-error">{{display_validation_error "first_name_empty" "first_name_too_long" "last_name_empty" "last_name_too_long"}}</small>
+        </div>
+        <div class="form-group col-md-6">
+          <input name="family-name" value="{{initial_last_name}}" type="text" placeholder="{{_ "last_name"}}" class="last-name form-control form-control-lg {{#if invalid_last_name}}is-invalid{{/if}}" />
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="{{_ "login_pick_a_password"}}" class="set-password form-control form-control-lg {{#if invalid_set_password}}is-invalid{{/if}}" />
+        <small class="form-text text-danger validation-error">{{display_validation_error "password_issue"}}</small>
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="{{_ "login_retype_password"}}" class="confirm-password form-control form-control-lg {{#if invalid_confirm_password}}is-invalid{{/if}}" />
+        {{!-- IMPORTANT! don't add the name attribute to the password input to avoid it passing through the wire to the pseudo-form-receiver --}}
+        <small class="form-text text-danger validation-error">{{display_validation_error "confirm_password_empty" "retype_password_error"}}</small>
+      </div>
+      {{!-- IMPORTANT! don't add the name attribute to the password input to avoid it passing through the wire to the pseudo-form-receiver --}}
+      {{#if showPasswordRequirements}}
+        <div class="password-requirements">
+          <div class="password-requirements-title">
+            {{_ "password_requirements_password_must"}}
+          </div>
+          {{#each passwordRequirements}}
+            <div class="requirements-item">
+              {{#if fullfilled code}}
+                <div class="requirements-item-title text-success">
+                  ✓ {{i18nReason}}
+                </div>
+              {{else}}
+                <div class="requirements-item-title">
+                  - {{i18nReason}}
+                </div>
+              {{/if}}
+            </div>
+          {{/each}}
+        </div>
+      {{/if}}
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input id="agree-terms-checkbox" type="checkbox" class="agree-terms-checkbox form-check-input">
+        <label for="agree-terms-checkbox" class="form-check-label text-dark">{{{xssGuard(_ "login_i_agree_to_tc_and_pp_html") noFormatting=true}}}
+          {{#if $eq page "promoters"}}
+          and <a href="/promoters-terms-and-conditions" class="promoters-terms-and-conditions-modal">Promoters Terms and Conditions</a>
+          {{/if}}
+        </label>
+      </div>
+      <small class="form-text text-danger validation-error">{{display_validation_error "agree_terms_and_privacy_missing" "technical_error"}}</small>
+    </div>
+    <button class="register-button btn btn-lg btn-block mb-3 {{#if is_loading}}disabled{{/if}}" type="submit" disabled="{{#if is_loading}}disabled{{/if}}">
+      {{#if $eq page "promoters"}}
+        Become a Promoter
+      {{else}}
+        {{_ "sign_up"}}
+      {{/if}}
+    </button>
+  </form>
+</template>
+
+<!-- Login State -->
+<template name="login_state">
+  <iframe id="pseudo-form-receiver" name="pseudo-form-receiver" style="display: none;" src="about:blank"></iframe>
+  <form id="pseudo-form-sender" target="pseudo-form-receiver" method="post" action="/pseudo-form-receiver">
+    <div class="form-group">
+      <input type="password"
+        placeholder="{{_ "login_enter_your_password"}}"
+        class="password-login form-control form-control-lg {{#if invalid_password_entered}}is-invalid{{/if}}" />
+      {{!-- IMPORTANT! don't add the name attribute to the password input to avoid it passing through the wire to the pseudo-form-receiver --}}
+      <div class="form-text text-danger validation-error">
+        {{display_validation_error "password_empty" "incorrect_password" "password_recovery_email_sent" "technical_error"}}
+      </div>
+      <small class="form-text text-muted notice-text">
+        {{display_notice "password_recovery_email_sent"}}
+      </small>
+    </div>
+    {{#if displayRecaptcha}}
+      <div class="recaptcha-container">
+        {{> justdo_recaptcha}}
+      </div>
+    {{/if}}
+    <div class="form-group">
+      <button class="login-button btn btn-primary btn-lg btn-block {{#if is_loading}}disabled{{/if}}" type="submit" disabled="{{#if is_loading}}disabled{{/if}}">
+        {{#if $eq page "promoters"}}
+          Sign in as a Promoter
+        {{else}}
+          {{_ "sign_in"}}
+        {{/if}}
+      </button>
+    </div>
+    {{!-- <div class="stay-logged-in"><input class="stay-logged-in" type="checkbox" /> Stay logged in</div> --}}
+    <p class="forgot-password text-center"><a href="" class="forgot-password-link">{{_ "login_forgot_password"}}</a></p>
+  </form>
+</template>
+
+<!-- Loggedin state -->
+<template name="loggedin_state">
+  <div class="loggedin-message-container">
+    <div class="general-notice text-muted">{{{display_notice "redirect_to_main_app" "verify_email_status" "check_email_account_activation" "legal_docs_signature_required" }}}</div>
+    <div class="notice-text">{{{display_notice "verification_email_sent" "password_reset"}}}</div>
+  </div>
+  <button class="logout-button btn btn-lg btn-primary btn-block mb-3 {{#if is_loading}}disabled{{/if}}" disabled="{{#if is_loading}}disabled{{/if}}">{{_ "sign_out"}}</button>
+</template>
+
+<!-- Reset Password -->
+<template name="reset_password">
+  <iframe id="pseudo-form-receiver" name="pseudo-form-receiver" style="display: none;" src="about:blank"></iframe>
+  <form id="pseudo-form-sender" target="pseudo-form-receiver" method="post" action="/pseudo-form-receiver">
+    <h5 class="text-center mb-3 text-dark">{{_ "password_recovery_title"}}</h5>
+    <div class="form-group">
+      <input type="password" placeholder="{{_ "password_recovery_reset_password"}}" class="reset-password form-control {{#if invalid_set_password}}is-invalid{{/if}}" />
+      {{!-- IMPORTANT! don't add the name attribute to the password input to avoid it passing through the wire to the pseudo-form-receiver --}}
+      <small class="form-text text-danger validation-error">{{display_validation_error "reset_password_issue"}}</small>
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="{{_ "login_retype_password"}}" class="confirm-reset-password form-control {{#if invalid_confirm_password}}is-invalid{{/if}}" />
+      {{!-- IMPORTANT! don't add the name attribute to the password input to avoid it passing through the wire to the pseudo-form-receiver --}}
+      <small class="form-text text-danger validation-error">{{display_validation_error "confirm_reset_password_empty" "retype_password_error" "technical_error"}}</small>
+    </div>
+    <button class="reset-password-button btn btn-primary btn-lg btn-block mb-3 {{#if is_loading}}disabled{{/if}}" type="submit" disabled="{{#if is_loading}}disabled{{/if}}">{{_ "password_recovery_reset_password"}}</button>
+  </form>
+</template>

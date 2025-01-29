@@ -1,0 +1,73 @@
+.main-menu
+  position: fixed
+  right: 0
+  top: 0
+  bottom: 0
+  width: 340px
+  height: auto
+  background-color: white
+  z-index: 20
+  transform: translate3d(400px, 0, 0)
+  transition: transform .3s ease-in-out 0s
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15)
+  transform-style: preserve-3d
+  padding: 12px 40px 40px 40px
+  opacity: 0
+
+.main-menu-backdrop
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: rgba(255, 255, 255, 0)
+  z-index: 10
+  backdrop-filter: blur(5px)
+  pointer-events: none
+  opacity: 0
+  transition: opacity 0.25s
+
+.main-menu-list
+  list-style: none
+  padding: 0
+
+.main-menu-heading
+  &.sm-show
+    display: none
+  margin-top: 24px
+  margin-bottom: 8px
+  color: #027bff
+  font-weight: 600
+
+.main-menu-item
+  margin-bottom: 8px
+  &.sm-show
+    display: none
+  a
+    cursor: pointer
+    color: black
+    text-decoration: none
+    font-size: 15px
+    display: flex
+    &:hover
+      text-decoration: underline
+      color: black
+
+.menu-is-open
+  overflow: hidden
+  .main-menu
+    opacity: 1
+    transform: translate3d(0, 0, 0)
+    overflow: auto
+    // A slight transparency is necessary to avoid the additional shadow that
+    // some browsers add to elements with overflow: auto;
+    background-color: rgba(255, 255, 255, 0.99)
+
+  .main-menu-backdrop
+    opacity: 1
+    pointer-events: all
+
+
+@media (max-width: 992px)
+  .main-menu-heading.sm-show, .main-menu-item.sm-show
+    display: block !important

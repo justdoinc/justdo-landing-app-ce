@@ -1,0 +1,12 @@
+{
+  "contact_title": "አግኙን",
+  "contact_subtitle": "የJustDo ባለሙያ የድጋፍ ቡድን ያግኙ። እርዳታ ይጠይቁ፣ ባህሪያትን ይመርምሩ፣ ወይም ዛሬ የማሳያ ቀጠሮ ይያዙ።",
+  "email_us_title": "ኢሜይል ያድርጉልን",
+  "email_us_subtitle": "በቀጥታ ኢሜይል ማድረግ ይፈልጋሉ? ችግር የለም! በሚከተሉት የኢሜይል አድራሻዎች ማግኘት ይችላሉ፡",
+  "technical_support_email": "የቴክኒክ ድጋፍ፡ <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "የማሳያ ጥያቄዎች፣ የባህሪ ጥያቄዎች እና ሌሎች ጉዳዮች፡ <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "አስገባ",
+  "contact_name_placeholder": "ስም",
+  "contact_email_placeholder": "ኢሜይል",
+  "contact_message_placeholder": "መልእክት"
+}

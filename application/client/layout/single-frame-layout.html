@@ -1,0 +1,39 @@
+<template name="single_frame_layout">
+  <div>
+    {{#if isJustdoI18nEnabled}}
+      {{> top_banner}}
+    {{/if}}
+
+    <div class="single-frame-wrapper {{currentRouteName}}">
+      {{!-- {{> status}} --}}
+
+      <div class="menu-wrapper {{#if isRtl}}right-to-left{{/if}}" dir="{{#if isRtl}}rtl{{/if}}">
+        {{> main_menu}}
+      </div>
+
+      <div class="container">
+        <div class="header-wrapper {{#if isRtl}}right-to-left{{/if}}" dir="{{#if isRtl}}rtl{{/if}}">
+          {{> header frame="single"}}
+        </div>
+
+        <div class="page page-{{currentRouteName}} {{#if isRtl currentRouteName}}right-to-left{{/if}}" dir="{{#if isRtl currentRouteName}}rtl{{/if}}">
+          {{> yield}}
+        </div>
+
+        <div class="footer-wrapper {{#if isRtl}}right-to-left{{/if}}" dir="{{#if isRtl}}rtl{{/if}}">
+          {{> footer}}
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {{#each postFrameWrapperItems}}
+    {{#if template}}
+      {{> Template.dynamic template=template data=templateData}}
+    {{else if html}}
+      {{{html}}}
+    {{/if}}
+  {{/each}}
+
+</template>

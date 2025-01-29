@@ -1,0 +1,12 @@
+{
+  "contact_title": "Neem contact op",
+  "contact_subtitle": "Kom in contact met het deskundige ondersteuningsteam van JustDo. Vraag hulp aan, verken functies of plan vandaag nog een demo.",
+  "email_us_title": "E-mail ons",
+  "email_us_subtitle": "Wilt u ons liever direct e-mailen? Geen probleem! U kunt ons bereiken op de volgende e-mailadressen:",
+  "technical_support_email": "Technische ondersteuning: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Demoverzoeken, functieverzoeken en alle andere zaken: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Verzenden",
+  "contact_name_placeholder": "Naam",
+  "contact_email_placeholder": "E-mail",
+  "contact_message_placeholder": "Bericht"
+}

@@ -1,0 +1,12 @@
+{
+  "contact_title": "Kontaktirajte nas",
+  "contact_subtitle": "Stupite u kontakt sa stručnim timom za podršku JustDo-a. Zatražite pomoć, istražite funkcije ili zakažite demonstraciju danas.",
+  "email_us_title": "Pošaljite nam e-poštu",
+  "email_us_subtitle": "Više volite da nam direktno pošaljete e-poštu? Nema problema! Možete nas kontaktirati na sledeće adrese e-pošte:",
+  "technical_support_email": "Tehnička podrška: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Zahtevi za demonstraciju, zahtevi za nove funkcije i sva ostala pitanja: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Pošalji",
+  "contact_name_placeholder": "Ime",
+  "contact_email_placeholder": "E-pošta",
+  "contact_message_placeholder": "Poruka"
+}

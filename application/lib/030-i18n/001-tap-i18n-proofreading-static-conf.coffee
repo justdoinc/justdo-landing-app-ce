@@ -1,0 +1,1 @@
+# See 030-route.coffee header for the overriding of the default JustdoI18n.default_i18n_route_proofreading_scope

@@ -1,0 +1,50 @@
+.login-form-wrapper
+  display: flex
+  flex-grow: 1
+  align-items: center
+  justify-content: center
+  &.spotlight
+    background: radial-gradient(25% 100% at 50% 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 100%)
+
+.page-sign_in
+  position: relative
+  width: 100%
+  .jd-style-bg-icons
+    z-index: -1
+    display: flex
+    position: absolute
+    width: 100%
+    justify-content: space-between
+    opacity: 0.85
+    .jd-style-bg-icons-set
+      display: flex
+      flex-direction: row
+    .jd-icon-wrapper
+      width: 100px
+      height: 100px
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.07)
+      border-radius: 20px
+      border: 6px solid white
+      background: white
+      position: absolute
+      .jd-icon
+        width: 100%
+        height: 100%
+        padding: 20px
+        border-radius: 16px
+
+    .jd-style-bg-circle
+      position: absolute
+      width: 600px
+      height: 600px
+      border-radius: 100%
+      z-index: -2
+      pointer-events: none
+      &.left
+        bottom: -300px
+        right: 60%
+        background: radial-gradient(50% 50% at 50% 50%,rgba(7,166,255,.35) 0,rgba(7,166,255,0) 100%)
+      &.right
+        bottom: -200px
+        left: 60%
+        background: radial-gradient(50% 50% at 50% 50%, rgba(189, 102, 235, 0.25) 0%, rgba(189, 102, 235, 0) 100%)

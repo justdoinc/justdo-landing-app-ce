@@ -1,0 +1,84 @@
+.main-box
+  width: 360px
+
+  .sign-in-sign-up-title
+    font-size: 1.5rem
+
+  .next-button,
+  .register-button
+    background: linear-gradient(90deg, #027bff 0%, #07A6FF 100%)
+    color: white
+    font-size: 16px
+    &:hover
+      color: white
+
+  input
+    font-size: 16px
+
+  .mail
+    direction: ltr
+
+  .profile-pic img
+    width: 100px
+    height: 100px
+
+  .btn-app-store
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .btn-app-store + .btn-app-store
+    margin-left: 8px
+
+  .icon-google-play
+    display: inline-block
+    width: 18px
+    height: 20px
+    vertical-align: middle
+    background-image: url(/layout/icons.png)
+    background-position: -120px 0px
+    margin-right: 8px
+
+  .icon-apple
+    display: inline-block
+    width: 18px
+    height: 20px
+    vertical-align: middle
+    background-image: url(/layout/icons.png)
+    background-position: -232px 0px
+    margin-right: 8px
+
+  .exit-bold-main-box
+    display: none
+    top: 32px
+    right: 50px
+
+  .register-wrapper
+    position: relative
+
+  .password-requirements
+    background-color: white
+    position: absolute
+    width: 100%
+    transition: all 0.3s ease-in-out
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175)
+    padding: 8px 12px
+    border-radius: 4px
+    color: #3D495B
+    z-index: 10
+    font-size: 13px
+
+    .password-requirements-title
+      font-weight: 600
+
+.page-promoters
+  .main-box
+    .exit-bold-main-box
+      display: none
+
+@media (max-width: 768px)
+  .password-requirements
+    left: 0
+    top: 100% !important
+    margin-top: 8px

@@ -1,0 +1,12 @@
+{
+  "contact_title": "Kontakt oss",
+  "contact_subtitle": "Kom i kontakt med JustDo's ekspertstøtteteam. Be om hjelp, utforsk funksjoner eller planlegg en demo i dag.",
+  "email_us_title": "Send oss en e-post",
+  "email_us_subtitle": "Foretrekker du å sende oss en e-post direkte? Ikke noe problem! Du kan nå oss på følgende e-postadresser:",
+  "technical_support_email": "Teknisk støtte: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Forespørsler om demo, funksjonsønsker og andre henvendelser: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Send inn",
+  "contact_name_placeholder": "Navn",
+  "contact_email_placeholder": "E-post",
+  "contact_message_placeholder": "Melding"
+}

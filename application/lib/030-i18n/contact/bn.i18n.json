@@ -1,0 +1,12 @@
+{
+  "contact_title": "যোগাযোগ করুন",
+  "contact_subtitle": "জাস্টডু-এর বিশেষজ্ঞ সহায়তা দলের সাথে যোগাযোগ করুন। সাহায্য চান, বৈশিষ্ট্য অন্বেষণ করুন, অথবা আজই একটি ডেমো নির্ধারণ করুন।",
+  "email_us_title": "আমাদের ইমেইল করুন",
+  "email_us_subtitle": "সরাসরি আমাদের ইমেইল করতে চান? কোনো সমস্যা নেই! আপনি নিম্নলিখিত ইমেইল ঠিকানায় আমাদের সাথে যোগাযোগ করতে পারেন:",
+  "technical_support_email": "প্রযুক্তিগত সহায়তা: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "ডেমো অনুরোধ, বৈশিষ্ট্য অনুরোধ, এবং অন্য যে কোনো বিষয়: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "জমা দিন",
+  "contact_name_placeholder": "নাম",
+  "contact_email_placeholder": "ইমেইল",
+  "contact_message_placeholder": "বার্তা"
+}

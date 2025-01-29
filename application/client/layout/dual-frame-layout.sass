@@ -1,0 +1,46 @@
+@import "{}/imports/global-sass/global-vars.sass"
+
+.dual-frame-wrapper
+  height: 100vh
+  transition: opacity 0.35s
+  opacity: 0
+
+  .left-frame
+    display: flex
+    flex-direction: column
+    padding: 0px 40px
+
+  .login-form-wrapper
+    margin-top: 40px
+
+  footer
+    justify-content: center
+
+// CSS support for RTL
+.dual-frame-wrapper.right-to-left
+  direction: rtl
+  text-align: right
+  .justdo-login-only-promo
+    padding: 28px 0px 28px 28px
+    .menu-icon
+      right: unset
+      left: 54px
+  .icon-google,
+  .icon-google-play,
+  .icon-apple
+    margin-right: unset
+    margin-left: 8px
+  input[type="email"],
+  input[type="password"]
+    direction: ltr !important
+    text-align: right !important
+  .form-control
+    padding-right: 1rem
+
+@media (max-width: 992px)
+  .dual-frame-wrapper
+    .main-box
+      width: 100%
+      max-width: 360px
+  .left-frame
+    padding: 0px 20px !important

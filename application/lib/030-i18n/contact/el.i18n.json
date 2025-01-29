@@ -1,0 +1,12 @@
+{
+  "contact_title": "Επικοινωνήστε μαζί μας",
+  "contact_subtitle": "Επικοινωνήστε με την ομάδα υποστήριξης του JustDo. Ζητήστε βοήθεια, εξερευνήστε λειτουργίες ή προγραμματίστε μια επίδειξη σήμερα.",
+  "email_us_title": "Στείλτε μας email",
+  "email_us_subtitle": "Προτιμάτε να μας στείλετε απευθείας email; Κανένα πρόβλημα! Μπορείτε να επικοινωνήσετε μαζί μας στις ακόλουθες διευθύνσεις email:",
+  "technical_support_email": "Τεχνική υποστήριξη: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Αιτήματα για επίδειξη, αιτήματα για νέες λειτουργίες και οποιοδήποτε άλλο θέμα: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Υποβολή",
+  "contact_name_placeholder": "Όνομα",
+  "contact_email_placeholder": "Email",
+  "contact_message_placeholder": "Μήνυμα"
+}

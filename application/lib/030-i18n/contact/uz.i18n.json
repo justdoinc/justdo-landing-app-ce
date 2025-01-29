@@ -1,0 +1,12 @@
+{
+  "contact_title": "Biz bilan bog'laning",
+  "contact_subtitle": "JustDo'ning ekspert yordam jamoasi bilan bog'laning. Bugun yordam so'rang, imkoniyatlarni o'rganing yoki namoyish uchun vaqt belgilang.",
+  "email_us_title": "Bizga elektron pochta yuboring",
+  "email_us_subtitle": "To'g'ridan-to'g'ri elektron pochta yuborishni afzal ko'rasizmi? Muammo yo'q! Bizga quyidagi elektron pochta manzillariga murojaat qilishingiz mumkin:",
+  "technical_support_email": "Texnik yordam: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Namoyish so'rovlari, yangi imkoniyat so'rovlari va boshqa masalalar: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Yuborish",
+  "contact_name_placeholder": "Ism",
+  "contact_email_placeholder": "Elektron pochta",
+  "contact_message_placeholder": "Xabar"
+}

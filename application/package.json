@@ -1,0 +1,22 @@
+{
+  "name": "justdo-landing-app",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.23.5",
+    "aws-sdk": "^2.1508.0",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^5.1.1",
+    "bluebird": "^3.7.2",
+    "bson-to-json": "git+https://github.com/justdoinc/bson-to-json.git#v2.0.0",
+    "colors": "~1.1.2",
+    "core-js": "^2.6.12",
+    "fibers": "^5.0.3",
+    "meteor-node-stubs": "^1.2.12",
+    "mysql": "^2.18.1",
+    "swiper": "^11.1.4",
+    "webfontloader": "~1.6.28"
+  }
+}

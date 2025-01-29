@@ -1,0 +1,12 @@
+{
+  "contact_title": "Na Kontaktoni",
+  "contact_subtitle": "Lidhuni me ekipin ekspert të mbështetjes së JustDo. Kërkoni ndihmë, eksploroni veçoritë ose planifikoni një demonstrim sot.",
+  "email_us_title": "Na Dërgoni Email",
+  "email_us_subtitle": "Preferoni të na dërgoni email drejtpërdrejt? Asnjë problem! Mund të na kontaktoni në adresat e mëposhtme të emailit:",
+  "technical_support_email": "Mbështetje teknike: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Kërkesat për demonstrim, kërkesat për veçori dhe çdo çështje tjetër: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Dërgo",
+  "contact_name_placeholder": "Emri",
+  "contact_email_placeholder": "Email",
+  "contact_message_placeholder": "Mesazhi"
+}

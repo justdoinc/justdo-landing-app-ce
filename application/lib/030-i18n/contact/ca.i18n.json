@@ -1,0 +1,12 @@
+{
+  "contact_title": "Contacteu-nos",
+  "contact_subtitle": "Poseu-vos en contacte amb l'equip d'experts de suport de JustDo. Sol·liciteu ajuda, exploreu funcionalitats o programeu una demostració avui mateix.",
+  "email_us_title": "Envieu-nos un correu electrònic",
+  "email_us_subtitle": "Preferiu enviar-nos un correu electrònic directament? Cap problema! Podeu contactar-nos a les següents adreces de correu electrònic:",
+  "technical_support_email": "Suport tècnic: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Sol·licituds de demostració, sol·licituds de funcionalitats i qualsevol altre assumpte: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Enviar",
+  "contact_name_placeholder": "Nom",
+  "contact_email_placeholder": "Correu electrònic",
+  "contact_message_placeholder": "Missatge"
+}

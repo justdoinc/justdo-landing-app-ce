@@ -1,0 +1,12 @@
+{
+  "contact_title": "Entre em Contato",
+  "contact_subtitle": "Entre em contato com a equipe de suporte especializada do JustDo. Solicite ajuda, explore recursos ou agende uma demonstração hoje.",
+  "email_us_title": "Envie-nos um E-mail",
+  "email_us_subtitle": "Prefere nos enviar um e-mail diretamente? Sem problema! Você pode nos contatar nos seguintes endereços de e-mail:",
+  "technical_support_email": "Suporte técnico: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Solicitações de demonstração, pedidos de recursos e outros assuntos: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Enviar",
+  "contact_name_placeholder": "Nome",
+  "contact_email_placeholder": "E-mail",
+  "contact_message_placeholder": "Mensagem"
+}

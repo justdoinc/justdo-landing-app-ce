@@ -1,0 +1,12 @@
+{
+  "contact_title": "聯絡我們",
+  "contact_subtitle": "與JustDo專業支援團隊取得聯繫。現在就請求協助、探索功能或安排演示。",
+  "email_us_title": "給我們發電子郵件",
+  "email_us_subtitle": "希望直接給我們發電子郵件？ 沒問題！ 您可以透過以下電子郵件地址聯絡我們：",
+  "technical_support_email": "技術支援：<a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "產品展示、訂製功能及其他事項：<a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "傳送",
+  "contact_name_placeholder": "姓名",
+  "contact_email_placeholder": "電子郵件",
+  "contact_message_placeholder": "訊息"
+}

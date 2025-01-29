@@ -1,0 +1,12 @@
+{
+  "contact_title": "हमसे संपर्क करें",
+  "contact_subtitle": "JustDo की विशेषज्ञ सहायता टीम से संपर्क करें। सहायता मांगें, सुविधाओं का पता लगाएं, या आज ही डेमो शेड्यूल करें।",
+  "email_us_title": "हमें ईमेल करें",
+  "email_us_subtitle": "सीधे हमें ईमेल करना पसंद करते हैं? कोई समस्या नहीं! आप हमसे निम्नलिखित ईमेल पतों पर संपर्क कर सकते हैं:",
+  "technical_support_email": "तकनीकी सहायता: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "डेमो अनुरोध, सुविधा अनुरोध, और कोई अन्य मामला: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "जमा करें",
+  "contact_name_placeholder": "नाम",
+  "contact_email_placeholder": "ईमेल",
+  "contact_message_placeholder": "संदेश"
+}

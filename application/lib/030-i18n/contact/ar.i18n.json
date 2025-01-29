@@ -1,0 +1,12 @@
+{
+  "contact_title": "اتصل بنا",
+  "contact_subtitle": "تواصل مع فريق الدعم الخبير في JustDo. اطلب المساعدة، استكشف الإضافات والميزات، أو قم بتحديد موعد لعرض توضيحي (Demo) اليوم.",
+  "email_us_title": "راسلنا عبر البريد الإلكتروني",
+  "email_us_subtitle": "هل تفضلون مراسلتنا مباشرة عبر البريد الإلكتروني؟ لا مشكلة! يمكنكم التواصل معنا على عناوين البريد الإلكتروني التالية:",
+  "technical_support_email": "الدعم الفني: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "طلبات العرض التوضيحي، طلبات لميزات، وأي أمر آخر: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "إرسال",
+  "contact_name_placeholder": "الاسم",
+  "contact_email_placeholder": "البريد الإلكتروني",
+  "contact_message_placeholder": "الرسالة"
+}

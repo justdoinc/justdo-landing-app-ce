@@ -1,0 +1,12 @@
+{
+  "contact_title": "Kontaktujte nás",
+  "contact_subtitle": "Spojte sa s expertným tímom podpory JustDo. Požiadajte o pomoc, preskúmajte funkcie alebo si naplánujte demo ešte dnes.",
+  "email_us_title": "Napíšte nám",
+  "email_us_subtitle": "Preferujete nám napísať priamo? Žiadny problém! Môžete nás kontaktovať na nasledujúcich e-mailových adresách:",
+  "technical_support_email": "Technická podpora: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Žiadosti o demo, návrhy funkcií a akékoľvek iné záležitosti: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Odoslať",
+  "contact_name_placeholder": "Meno",
+  "contact_email_placeholder": "E-mail",
+  "contact_message_placeholder": "Správa"
+}

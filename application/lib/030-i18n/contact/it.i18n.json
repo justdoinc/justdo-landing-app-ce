@@ -1,0 +1,12 @@
+{
+  "contact_title": "Contattaci",
+  "contact_subtitle": "Entra in contatto con il team di esperti di JustDo. Richiedi assistenza, esplora le funzionalità o prenota una demo oggi stesso.",
+  "email_us_title": "Scrivici",
+  "email_us_subtitle": "Preferisci inviarci un'email? Nessun problema! Puoi contattarci ai seguenti indirizzi:",
+  "technical_support_email": "Supporto tecnico: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Richieste di dimostrazioni, richieste di funzionalità e qualsiasi altra domanda: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Invia",
+  "contact_name_placeholder": "Nome",
+  "contact_email_placeholder": "Email",
+  "contact_message_placeholder": "Messaggio"
+}

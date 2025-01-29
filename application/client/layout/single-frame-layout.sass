@@ -1,0 +1,371 @@
+@import "{}/imports/global-sass/global-vars.sass"
+
+body
+  height: 100%
+  min-width: 100%
+  position: absolute
+  overflow-x: hidden
+
+.single-frame-wrapper
+  display: flex
+  flex-direction: column
+  padding: 0 40px
+  min-height: 100vh
+  .container
+    display: flex
+    flex-direction: column
+    flex-grow: 1
+
+.single-frame-wrapper
+  &.main_page
+    overflow: hidden
+
+.page
+  display: flex
+  flex-grow: 1
+  justify-content: center
+  margin-top: 20px
+  flex-direction: column
+
+.jd-icon
+  stroke: currentColor
+  stroke-width: 2
+  stroke-linecap: round
+  stroke-linejoin: round
+  fill: none
+
+.jd-icon-16
+  width: 16px
+  height: 16px
+
+.jd-icon-24
+  width: 24px
+  height: 24px
+
+.jd-icon-32
+  width: 32px
+  height: 32px
+
+.jd-c-pointer
+  cursor: pointer
+
+.jd-opacity-0
+  opacity: 0
+
+.jd-opacity-25
+  opacity: 0.25
+
+.jd-opacity-50
+  opacity: 0.5
+
+.jd-opacity-75
+  opacity: 0.75
+
+.jd-opacity-100
+  opacity: 1
+
+.jd-fill-primary
+  fill: $blue
+
+
+.jd-loader
+  display: inline-block
+  position: relative
+  width: 58px
+  height: 58px
+  div
+    position: absolute
+    opacity: 1
+    border-radius: 50%
+    animation: jd-loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite
+    &:nth-child(2)
+      animation-delay: -0.5s
+
+@keyframes jd-loader
+  0%
+    top: 28px
+    left: 28px
+    width: 0
+    height: 0
+    opacity: 1
+
+  100%
+    top: -1px
+    left: -1px
+    width: 58px
+    height: 58px
+    opacity: 0
+
+
+.modal-body
+  max-height: calc(100vh - 100px)
+  overflow-y: auto
+
+.single-frame-wrapper
+  .page-contact
+    align-items: center
+    .contact-page-content
+      max-width: 640px
+
+@media (max-width: 992px)
+  .single-frame-wrapper
+    padding: 0 12px
+    .main-box
+      width: 100%
+      max-width: 360px
+
+@media screen and (max-width: $extra-small-devices)
+  .bootbox-close-button
+    font-size: 40px
+
+// for printing
+@media print
+  .modal-open *
+    visibility: hidden
+  .bootbox *
+    visibility: visible
+    overflow: visible
+  .modal
+    position: absolute
+    left: 0
+    top: 0
+    margin: 0
+    padding: 0
+    min-height: 550px
+    visibility: visible
+    /**Remove scrollbar for printing.**/
+    overflow: visible !important
+  .modal-dialog
+    visibility: visible !important
+    /**Remove scrollbar for printing.**/
+    overflow: visible !important
+    margin: 0
+  .modal-content
+    border: none
+  .bootbox-close-button
+    display: none
+
+.menu-is-open
+  .right-to-left
+    .main-menu
+      transform: translate3d(0, 0, 0)
+
+.right-to-left
+  // Header
+  .menu-icon
+    margin-left: unset
+    margin-right: 20px
+  .try-for-free.ai-landing
+    margin-right: unset
+    margin-left: 16px
+    .nav-link
+      margin-left: unset
+      margin-right: 32px
+  .nav-item + .nav-item
+    margin-left: unset
+    margin-right: 20px
+  .main-menu
+    right: unset
+    left: 0
+    transform: translate3d(-400px, 0, 0)
+  .main-menu-list
+    text-align: right
+  &.page
+    text-align: right
+
+  // Main Page
+  &.page-main_page
+    .jd-hero-btn-github
+      .jd-icon
+        margin-right: unset
+        margin-left: 8px
+    .features-wrapper,
+    .stats
+      div
+        text-align: right
+    .welcome-ai-typed,
+    .welcome-ai-input
+      padding: 20px 16px 20px 100px !important
+    .welcome-ai-suggestion-item
+      text-align: right
+    .welcome-ai-results
+      .welcome-ai-result-item
+        padding-left: unset
+        padding-right: 16px
+      .welcome-ai-result-item-checkbox
+        margin-right: unset
+        margin-left: 8px
+    .welcome-ai-btn-wrapper
+      right: unset
+      left: 16px
+      .loader
+        margin-right: unset
+        margin-left: 6px
+    .features-header
+      border-left: unset
+      border-right: 4px solid black
+      padding-left: unset
+      padding-right: 35px
+    .features-section
+      &:first-child
+        padding-right: 0px
+        padding-left: 20px
+      &:last-child
+        padding-left: 0px
+        padding-right: 20px
+
+  // Login page
+  .btn-app-store + .btn-app-store
+    margin-left: unset !important
+    margin-right: 8px
+  .icon-google,
+  .icon-google-play,
+  .icon-apple
+    margin-right: unset !important
+    margin-left: 8px
+
+  // News page
+  .news
+    .news-navigation
+      .versions-dropdown-btn
+        padding: 8px 16px 8px 12px
+        .jd-icon
+          margin-left: unset
+          margin-right: 6px
+      .versions-dropdown
+        border-right: unset
+        padding-right: unset
+        margin-right: unset
+        border-left: 1px solid #E0E2E6
+        padding-left: 24px
+        margin-left: 24px
+        .dropdown-menu
+          right: 0px !important
+          left: auto !important
+          transform: translate3d(0px, 40px, 0px) !important
+        .dropdown-item
+          text-align: right
+      .news-navigation-item
+        margin-right: unset
+        margin-left: 24px
+    .news-item
+      border-left: unset
+      padding-left: unset
+      border-right: 4px solid rgba(106, 125, 143, 0.2)
+      padding-right: 35px
+    .updates-list
+      border-left: unset
+      border-right: 4px solid rgba(106, 125, 143, 0.2)
+      padding-right: 32px
+      margin-right: 32px
+      padding-left: unset
+      margin-left: unset
+    .update-title-wrapper
+      text-align: left
+
+  // Page pricing
+  &.page-pricing
+    .plan-1.first::before,
+    .plan-2.first::before
+      left: unset
+      right: 0px
+    .plan-item
+      padding: 8px 0px 8px 20px
+    .with-description
+      .jd-icon
+        transform: rotate(180deg)
+    .plan-1
+      margin-right: unset
+      margin-left: 20px
+    .description-image
+      margin-right: unset !important
+      margin-left: 20px
+    .plan-1,
+    .plan-2
+      .jd-tooltip
+        left: 0 !important
+        right: unset !important
+      .price-base
+        margin-right: unset
+        margin-left: 12px
+    .plan-item
+      .jd-tooltip
+        right: 0 !important
+        left: unset !important
+    .price-expand,
+    .price-collapse
+      margin-left: unset
+      margin-right: 12px
+    .feature-price-toggle
+      margin-right: unset !important
+      margin-left: 4px
+
+  // Footer
+  footer
+    .footer-language-selector
+      margin-right: unset
+      margin-left: 12px
+      .footer-languag-improve-btn
+        border-top-left-radius: 0.25rem
+        border-bottom-left-radius: 0.25rem
+        border-top-right-radius: 0
+        border-bottom-right-radius: 0
+        border-right: 0
+      .footer-language-selector-btn
+        border-top-left-radius: 0
+        border-bottom-left-radius: 0
+        border-top-right-radius: 0.25rem !important
+        border-bottom-right-radius: 0.25rem !important
+        .jd-icon
+          margin-right: unset
+          margin-left: 6px
+      .dropdown-menu
+        .dropdown-item
+          text-align: right
+    .footer-github-mobile
+      margin-left: unset
+      margin-right: 4px
+    .footer-github-btn
+      .jd-icon
+        margin-right: unset
+        margin-left: 4px
+
+// Bootbox
+.right-to-left.bootbox
+  .modal-footer > :not(:first-child)
+    margin-left: unset
+    margin-right: .25rem
+  .modal-footer > :not(:last-child)
+    margin-right: unset
+    margin-left: .25rem
+
+// Bootstrap elements
+.right-to-left
+  .form-check
+    padding-left: unset
+    label
+      padding-right: 1.25rem
+
+.single-frame-wrapper .right-to-left
+  input[type="email"],
+  input[type="password"]
+    direction: ltr !important
+    text-align: right !important
+  .form-control
+    padding-right: 1rem
+
+@media (max-width: 992px)
+  .right-to-left
+    .welcome-ai-btn-wrapper
+      right: unset !important
+      left: 12px !important
+    .menu-icon
+      margin-left: unset !important
+      margin-right: 0px !important
+    .navbar-nav .try-for-free .nav-link
+      margin-left: unset !important
+      margin-right: 0px !important
+    .updates-list
+      border-right: none !important
+      padding-right: 0px !important
+      margin-right: 0px !important

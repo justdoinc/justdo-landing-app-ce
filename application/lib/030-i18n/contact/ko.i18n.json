@@ -1,0 +1,12 @@
+{
+  "contact_title": "문의하기",
+  "contact_subtitle": "JustDo의 전문 지원팀과 연락하세요. 도움 요청, 기능 탐색 또는 데모 일정을 잡아보세요.",
+  "email_us_title": "이메일 문의",
+  "email_us_subtitle": "직접 이메일을 보내시는 것을 선호하신다면 문제없습니다! 다음 이메일 주소로 연락 주시기 바랍니다:",
+  "technical_support_email": "기술 지원: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "데모 요청, 기능 요청 및 기타 문의 사항: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "제출",
+  "contact_name_placeholder": "이름",
+  "contact_email_placeholder": "이메일",
+  "contact_message_placeholder": "메시지"
+}

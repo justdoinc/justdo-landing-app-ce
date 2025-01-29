@@ -1,0 +1,12 @@
+{
+  "contact_title": "Бізбен байланысу",
+  "contact_subtitle": "JustDo-ның сарапшы қолдау тобымен байланысыңыз. Көмек сұраңыз, мүмкіндіктерді зерттеңіз немесе бүгін демо нұсқаға жазылыңыз.",
+  "email_us_title": "Бізге электрондық пошта жіберіңіз",
+  "email_us_subtitle": "Бізге тікелей электрондық пошта жіберуді қалайсыз ба? Ешқандай мәселе жоқ! Сіз бізге келесі электрондық пошта мекенжайлары арқылы хабарласа аласыз:",
+  "technical_support_email": "Техникалық қолдау: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Демо сұраулары, функция сұраулары және басқа да мәселелер: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Жіберу",
+  "contact_name_placeholder": "Аты",
+  "contact_email_placeholder": "Электрондық пошта",
+  "contact_message_placeholder": "Хабарлама"
+}

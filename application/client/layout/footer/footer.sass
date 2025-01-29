@@ -1,0 +1,45 @@
+@import "{}/imports/global-sass/global-vars.sass"
+
+footer
+  padding: 20px 0 60px 0
+  margin-top: 40px
+  color: rgba(49, 69, 99, 0.6)
+  font-size: 14px
+  display: flex !important
+  align-items: center
+  .footer-content-wrapper
+    display: flex
+    align-items: center
+    .footer-br
+      display: none
+    .footer-github-mobile
+      display: none
+      margin-left: 4px
+    .footer-github-desktop
+      display: flex
+  .separator
+    width: 1px
+    height: 16px
+    background-color: #c2cad5
+    margin: 0px 10px
+    display: flex
+  .footer-github-btn
+    display: flex
+    align-items: center
+    .jd-icon
+      width: 18px
+      height: 18px
+      margin-right: 4px
+
+@media (max-width: 992px)
+  footer
+    flex-direction: column
+  .footer-github-mobile,
+  .footer-br
+    display: flex !important
+  .footer-github-desktop,
+  .separator
+    display: none !important
+  .footer-content-wrapper + .footer-content-wrapper
+    margin-top: 12px
+    text-align: center

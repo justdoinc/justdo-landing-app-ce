@@ -1,0 +1,12 @@
+{
+  "contact_title": "Ota yhteyttä",
+  "contact_subtitle": "Ota yhteyttä JustDon asiantuntevaan tukitiimiin. Pyydä apua, tutustu ominaisuuksiin tai varaa esittely tänään.",
+  "email_us_title": "Lähetä sähköpostia",
+  "email_us_subtitle": "Haluatko mieluummin lähettää meille sähköpostia suoraan? Ei ongelmaa! Voit tavoittaa meidät seuraavista sähköpostiosoitteista:",
+  "technical_support_email": "Tekninen tuki: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Esittelypyynnöt, ominaisuuspyynnöt ja muut asiat: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Lähetä",
+  "contact_name_placeholder": "Nimi",
+  "contact_email_placeholder": "Sähköposti",
+  "contact_message_placeholder": "Viesti"
+}

@@ -1,0 +1,29 @@
+<template name="dual_frame_layout">
+  {{#if isJustdoI18nEnabled}}
+    {{> top_banner}}
+  {{/if}}
+
+  <div class="dual-frame-wrapper row m-0 {{#if isRtl}}right-to-left{{/if}}">
+    {{!-- {{> status}} --}}
+    {{> main_menu}}
+
+    <div class="left-frame col">
+      {{> header frame="dual"}}
+      {{> yield}}
+      {{> footer}}
+    </div>
+
+    <div class="right-frame col p-0 d-none d-lg-flex">
+      {{> login_only_promo}}
+    </div>
+  </div>
+
+  {{#each postFrameWrapperItems}}
+    {{#if template}}
+      {{> Template.dynamic template=template data=templateData}}
+    {{else if html}}
+      {{{html}}}
+    {{/if}}
+  {{/each}}
+
+</template>

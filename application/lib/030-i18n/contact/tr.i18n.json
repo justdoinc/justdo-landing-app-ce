@@ -1,0 +1,12 @@
+{
+  "contact_title": "Bize Ulaşın",
+  "contact_subtitle": "JustDo'nun uzman destek ekibiyle iletişime geçin. Yardım isteyin, özellikleri keşfedin veya bugün bir demo planlayın.",
+  "email_us_title": "Bize E-posta Gönderin",
+  "email_us_subtitle": "Bize doğrudan e-posta göndermeyi mi tercih ediyorsunuz? Sorun değil! Bize aşağıdaki e-posta adreslerinden ulaşabilirsiniz:",
+  "technical_support_email": "Teknik destek: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Demo talepleri, özellik istekleri ve diğer konular: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Gönder",
+  "contact_name_placeholder": "Ad",
+  "contact_email_placeholder": "E-posta",
+  "contact_message_placeholder": "Mesaj"
+}

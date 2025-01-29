@@ -1,0 +1,40 @@
+{
+  "more_than_just_project_management_title": "Flexible CMS and ERP Platform",
+  "more_than_just_project_management_content": "JustDo is more than just project management software. It seamlessly functions as both a CMS and ERP system. Its high degree of customizability makes it ideal for a variety of business applications, offering robust, tailored solutions to meet specific industry needs. This versatility makes JustDo the perfect platform for businesses looking to integrate comprehensive management tools with the flexibility of a CMS.",
+  "full_ai_integration_title": "Full AI Integration",
+  "full_ai_integration_content": "With JustDo's advanced AI capabilities, you can quickly generate project structures from a single prompt, convert documents and contracts into tasks, produce comprehensive summaries, and run detailed queries about your projects.",
+  "choose_who_sees_what_title": "Choose Who Sees What",
+  "choose_who_sees_what_content": "Selective task sharing lets you invite clients, vendors, and stakeholders to your board while ensuring they only see what is shared with them. Our flexible permissions system accommodates a wide range of access controls, providing tailored visibility and security for every participant.",
+  "manage_multiple_projects_on_one_board_title": "Manage Multiple Projects on One Board",
+  "manage_multiple_projects_on_one_board_content": "With JustDo's support for massive boards containing over 200,000 tasks, managing multiple projects on a single board becomes convenient and efficient. Organize, monitor, and execute all your projects seamlessly in one centralized place.",
+  "gantt_dependencies_title": "Gantt & Dependencies",
+  "gantt_dependencies_content": "JustDo's fully-featured Gantt with Cross Project Dependencies. Enabling efficient planning, coordination, and tracking to keep projects on schedule.",
+  "chat_channels_emails_files_title": "Chat Channels, Emails, Files",
+  "chat_channels_emails_files_content": "Boost team collaboration with dedicated chat channels for every task. Discuss ideas in real-time, directly within your project, for seamless communication. Send emails directly to tasks, creating a centralized record accessible to everyone, even external collaborators. Effortlessly manage, share, and organize all your project documents in one place, keeping your team aligned and productive.",
+  "enterprise_grade_plugins_title": "Enterprise Grade Plugins",
+  "enterprise_grade_plugins_content": "JustDo offers a range of enterprise-grade plugins to enhance your project management capabilities. Identify, and manage risks with our <b>Risk Management</b> Plugin that ensure project success and resilience. Accurately track time spent on tasks with intuitive <b>Time Tracking</b> for precise resource allocation. Optimize task allocation and balance workloads across team members with <b>Resource & Load Management</b>. These are just a few of the many powerful plugins available in JustDo.",
+
+  "main_page_slides_getting_started_video_title": "Getting Started with JustDo",
+  "main_page_slides_getting_started_video_subtitle": "Learn what JustDo can do for you!",
+
+  "main_page_slides_justdo_ai_prompt_title": "JustDo AI",
+  "main_page_slides_justdo_ai_prompt_subtitle": "Create your project with a single prompt",
+
+  "main_page_slides_do_pilot_message_paste_title": "Our AI Assistant",
+  "main_page_slides_do_pilot_message_paste_subtitle": "Create tasks from text messages and documents!",
+  
+  "main_page_slides_do_pilot_elaborate_tasks_title": "Auto-Elaborate Tasks",
+  "main_page_slides_do_pilot_elaborate_tasks_subtitle": "Automatically break tasks into sub-tasks",
+  
+  "main_page_slides_do_pilot_summary_title": "Task Chat with AI",
+  "main_page_slides_do_pilot_summary_subtitle": "Auto-summarize tasks and chat with AI about them",
+
+  "main_page_slides_task_summary": "Task summary",
+  "main_page_stats_unlimited": "Unlimited",
+  "main_page_stats_1": "Plugins",
+  "main_page_stats_2": "Years in the Market",
+  "main_page_stats_3": "Tasks Per Board",
+  "main_page_stats_4": "Customization Options",
+  "main_page_stats_5": "Colorful Themes",
+  "main_page_stats_6": "Supported Languages"
+}

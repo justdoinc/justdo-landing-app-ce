@@ -1,0 +1,12 @@
+{
+  "contact_title": "Võtke meiega ühendust",
+  "contact_subtitle": "Võtke ühendust JustDo ekspertide tugitiimiga. Küsige abi, uurige funktsioone või planeerige demo täna.",
+  "email_us_title": "Saatke meile e-kiri",
+  "email_us_subtitle": "Eelistate meile otse e-kirja saata? Pole probleemi! Saate meiega ühendust võtta järgmistel e-posti aadressidel:",
+  "technical_support_email": "Tehniline tugi: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Demo taotlused, funktsiooni soovid ja kõik muu: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Saada",
+  "contact_name_placeholder": "Nimi",
+  "contact_email_placeholder": "E-post",
+  "contact_message_placeholder": "Sõnum"
+}

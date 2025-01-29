@@ -1,0 +1,12 @@
+{
+  "contact_title": "ติดต่อเรา",
+  "contact_subtitle": "พูดคุยกับทีมผู้เชี่ยวชาญของ JustDo ขอความช่วยเหลือ สำรวจฟีเจอร์ หรือนัดหมายการสาธิตวันนี้",
+  "email_us_title": "อีเมลถึงเรา",
+  "email_us_subtitle": "ต้องการส่งอีเมลถึงเราโดยตรง? ไม่มีปัญหา! คุณสามารถติดต่อเราได้ที่อีเมลต่อไปนี้:",
+  "technical_support_email": "ฝ่ายสนับสนุนด้านเทคนิค: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "คำขอสาธิต คำขอฟีเจอร์ และเรื่องอื่นๆ: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "ส่ง",
+  "contact_name_placeholder": "ชื่อ",
+  "contact_email_placeholder": "อีเมล",
+  "contact_message_placeholder": "ข้อความ"
+}

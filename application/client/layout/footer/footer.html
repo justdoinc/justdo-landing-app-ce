@@ -1,0 +1,29 @@
+<template name="footer">
+  <footer>
+    {{#if showLangDropdown}}
+      <div class="footer-content-wrapper">
+        {{> lang_selector_dropdown}}
+        <div class="footer-github-mobile">
+          {{> footerGithubBtn}}
+        </div>
+      </div>
+    {{/if}}
+
+    <div class="footer-content-wrapper">
+      &copy; {{currentYear}} JustDo, Inc.<br class="footer-br">{{_ "all_rights_reserved"}}
+      {{#unless loginOnlyLayout}}
+        <div class="separator"></div>
+        <div class="footer-github-desktop">
+          {{> footerGithubBtn}}
+        </div>
+      {{/unless}}
+    </div>
+  </footer>
+</template>
+
+<template name="footerGithubBtn">
+  <a href="https://github.com/justdoinc/justdo" target="_blank" class="footer-github-btn">
+    <svg class="jd-icon"><use xlink:href="/layout/icons-feather-sprite.svg#github"></use></svg>
+    GitHub
+  </a>
+</template>

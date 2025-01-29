@@ -1,0 +1,12 @@
+{
+  "contact_title": "Jarri gurekin harremanetan",
+  "contact_subtitle": "Harremanetan jarri JustDo-ren laguntza-talde adituekin. Eskatu laguntza, aztertu ezaugarriak edo programatu demo bat gaur.",
+  "email_us_title": "Bidali mezu elektronikoa",
+  "email_us_subtitle": "Nahiago duzu zuzenean mezu elektronikoa bidali? Ez dago arazorik! Honako helbide elektronikoetara irits zaitezke:",
+  "technical_support_email": "Laguntza teknikoa: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Demo eskaerak, ezaugarri eskaerak eta beste edozein gai: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Bidali",
+  "contact_name_placeholder": "Izena",
+  "contact_email_placeholder": "Helbide elektronikoa",
+  "contact_message_placeholder": "Mezua"
+}

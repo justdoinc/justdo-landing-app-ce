@@ -1,0 +1,12 @@
+{
+  "contact_title": "Lépjen kapcsolatba velünk",
+  "contact_subtitle": "Vegye fel a kapcsolatot a JustDo szakértői támogatási csapatával. Kérjen segítséget, fedezze fel a funkciókat, vagy foglaljon időpontot egy bemutatóra még ma.",
+  "email_us_title": "Írjon nekünk e-mailt",
+  "email_us_subtitle": "Inkább közvetlenül e-mailben írna nekünk? Semmi gond! A következő e-mail címeken érhet el minket:",
+  "technical_support_email": "Technikai támogatás: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Bemutató kérések, funkcióigények és minden egyéb ügy: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Küldés",
+  "contact_name_placeholder": "Név",
+  "contact_email_placeholder": "E-mail cím",
+  "contact_message_placeholder": "Üzenet"
+}

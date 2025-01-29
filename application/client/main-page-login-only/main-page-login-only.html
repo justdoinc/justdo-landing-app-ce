@@ -1,0 +1,28 @@
+<template name="main_page_login_only">
+  <div class="login-form-wrapper {{#if isMarketingEnv}}spotlight{{/if}}">
+    {{> login_box page="main_page_login_only"}}
+  </div>
+
+  {{#if isMarketingEnv}}
+    <div class="jd-style-bg-icons">
+      <div class="jd-style-bg-icons-set">
+        {{#each bgIconsLeft}}
+        <div class="jd-icon-wrapper" style="{{iconWrapperStyleLeft}}">
+          <svg class="jd-icon" style="{{iconStyle}}"><use xlink:href="/layout/icons-feather-sprite.svg#{{icon_name}}"></use></svg>
+        </div>
+        {{/each}}
+      </div>
+      <div class="jd-style-bg-icons-set">
+        {{#each bgIconsRight}}
+        <div class="jd-icon-wrapper" style="{{iconWrapperStyleRight}}">
+          <svg class="jd-icon" style="{{iconStyle}}"><use xlink:href="/layout/icons-feather-sprite.svg#{{icon_name}}"></use></svg>
+        </div>
+        {{/each}}
+      </div>
+
+      <div class="jd-style-bg-circle left"></div>
+      <div class="jd-style-bg-circle right"></div>
+    </div>
+  {{/if}}
+
+</template>

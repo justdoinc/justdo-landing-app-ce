@@ -1,0 +1,12 @@
+{
+  "contact_title": "Susisiekite su mumis",
+  "contact_subtitle": "Susisiekite su JustDo ekspertų palaikymo komanda. Prašykite pagalbos, tyrinėkite funkcijas arba užsisakykite demonstraciją šiandien.",
+  "email_us_title": "Rašykite mums el. paštu",
+  "email_us_subtitle": "Norite parašyti mums tiesiogiai? Jokių problemų! Galite su mumis susisiekti šiais el. pašto adresais:",
+  "technical_support_email": "Techninė pagalba: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Demonstracijos užsakymai, funkcijų prašymai ir kiti klausimai: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Pateikti",
+  "contact_name_placeholder": "Vardas",
+  "contact_email_placeholder": "El. paštas",
+  "contact_message_placeholder": "Žinutė"
+}

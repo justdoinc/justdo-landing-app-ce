@@ -1,0 +1,8 @@
+<template name="login_with_azure_ad">
+  {{#if azure_ad_oauth_login_supported}}
+    <button class="azure-ad-oauth-login btn btn-lg btn-secondary btn-block mb-3">{{#if $eq mainBoxCaptionMode "sign-in"}}{{_ "sign_in_with_azure_ad"}}{{else}}{{_ "sign_up_with_azure_ad"}}{{/if}}</button>
+    {{#with err}}
+      <small class="form-text text-danger validation-error">{{reason}}</small>
+    {{/with}}
+  {{/if}}
+</template>

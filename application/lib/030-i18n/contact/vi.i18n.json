@@ -1,0 +1,12 @@
+{
+  "contact_title": "Liên hệ chúng tôi",
+  "contact_subtitle": "Kết nối với đội ngũ hỗ trợ chuyên nghiệp của JustDo. Yêu cầu trợ giúp, khám phá tính năng, hoặc đặt lịch demo ngay hôm nay.",
+  "email_us_title": "Gửi email cho chúng tôi",
+  "email_us_subtitle": "Gửi email trực tiếp cho chúng tôi tại địa chỉ:",
+  "technical_support_email": "Trung tâm hỗ trợ kỹ thuật: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Các câu hỏi về bản dùng thử, yêu cầu đặc biệt và tất cả các vấn đề khác liên quan: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Gửi câu hỏi",
+  "contact_name_placeholder": "Tên",
+  "contact_email_placeholder": "Email",
+  "contact_message_placeholder": "Tin nhắn"
+}

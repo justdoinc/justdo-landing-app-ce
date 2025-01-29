@@ -1,0 +1,12 @@
+{
+  "contact_title": "Свържете се с нас",
+  "contact_subtitle": "Свържете се с експертния екип за поддръжка на JustDo. Поискайте помощ, разгледайте функциите или планирайте демонстрация днес.",
+  "email_us_title": "Изпратете ни имейл",
+  "email_us_subtitle": "Предпочитате да ни изпратите имейл директно? Няма проблем! Можете да се свържете с нас на следните имейл адреси:",
+  "technical_support_email": "Техническа поддръжка: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Заявки за демонстрация, заявки за нови функции и всички други въпроси: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Изпрати",
+  "contact_name_placeholder": "Име",
+  "contact_email_placeholder": "Имейл",
+  "contact_message_placeholder": "Съобщение"
+}

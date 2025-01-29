@@ -1,0 +1,12 @@
+{
+  "contact_title": "Kontakta oss",
+  "contact_subtitle": "Kom i kontakt med JustDos expertsupportteam. Be om hjälp, utforska funktioner eller boka en demo idag.",
+  "email_us_title": "Maila oss",
+  "email_us_subtitle": "Föredrar du att maila oss direkt? Inga problem! Du kan nå oss på följande e-postadresser:",
+  "technical_support_email": "Teknisk support: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Förfrågningar om demo, funktionsförslag och alla andra ärenden: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Skicka",
+  "contact_name_placeholder": "Namn",
+  "contact_email_placeholder": "E-post",
+  "contact_message_placeholder": "Meddelande"
+}

@@ -1,0 +1,152 @@
+@import "{}/imports/global-sass/global-vars.sass"
+
+.navbar
+  justify-content: space-between
+  padding: 20px 0px 8px 0px !important
+  border-bottom: 1px solid #E6E9EC
+  &.single-frame
+    border: none
+  .brand
+    width: 100px
+    height: 20px
+    svg
+      fill: #027bff
+      width: 100px
+      height: 20px
+
+.navbar-menu
+  display: flex
+  align-items: center
+
+  .navbar-nav
+    flex-direction: row
+
+  .nav-link
+    font-weight: 500
+    &:hover
+      color: black
+    &.active
+      color: black
+      box-shadow: 0 2px 0 0 black
+
+  .sign-in,
+  .try-for-free
+    .nav-link
+      color: white
+      background: linear-gradient(90deg, #027bff 0%, #07A6FF 100%)
+      padding-left: 16px
+      padding-right: 16px
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08)
+      border-radius: 4px
+      transition: transform, box-shadow 0.32s linear
+      margin-left: 32px
+      &:hover
+        transform: scale(1.01)
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.16)
+      &:active
+        transform: scale(1)
+        box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.12)
+
+  .try-for-free:not(.ai-landing)
+    display: none
+
+  .try-for-free.ai-landing
+    margin-right: 16px
+
+.menu-icon
+  width: 32px
+  height: 32px
+  padding: 4px
+  transition: all 0.2s linear
+  border-radius: 3px
+  margin-left: 16px
+  &:hover
+    transform: scale(1.08)
+
+.brand
+  display: flex
+  transition: opacity 0.2s linear
+  .jd-logo-svg
+    width: 100px
+    stroke-width: 2.5
+    .jd-logo-part-1,
+    .jd-logo-part-3
+      fill: #027bff
+    .jd-logo-part-2
+      fill: #ffffff
+
+.nav-item
+  .nav-link
+    color: black
+    font-size: 16px
+
+.nav-item + .nav-item
+  margin-left: 32px
+
+.navbar
+  .footer-language-selector
+    margin-right: 0
+    margin-left: 16px
+    .dropdown-menu
+      right: 0
+      left: auto
+      top: 36px !important
+      bottom: auto !important
+    .footer-languag-improve-btn,
+    .jd-tooltip
+      display: none
+    .footer-language-selector-btn
+      font-size: 0
+      box-shadow: none
+      border: none
+      padding: 0
+      &:focus
+        box-shadow: none !important
+      .jd-icon
+        margin: 0
+        width: 20px
+        height: 20px
+        color: black !important
+        transition: all 0.2s linear
+        &:hover
+          transform: scale(1.08)
+
+.right-to-left
+  .navbar .footer-language-selector
+    margin-right: 16px
+    margin-left: unset
+    .dropdown-menu
+      right: auto
+      left: 0
+    .dropdown-item
+      text-align: right
+
+@media (max-width: 992px)
+  .navbar-menu
+    margin-right: -12px
+  .navbar-nav
+    .try-for-free
+      display: none !important
+      .nav-link
+        margin-left: 0 !important
+        padding: 6px 10px !important
+    .nav-item,
+    .sign-in
+      display: none !important
+  .menu-icon
+    margin-left: 8px !important
+  .right-to-left
+    .navbar .footer-language-selector
+      margin-right: 0
+      margin-left: 8px
+
+@media (max-width: 280px)
+  .navbar-nav
+    .try-for-free
+      display: none
+
+@media print
+  .navbar
+    display: flex !important
+    .navbar-menu
+      display: none

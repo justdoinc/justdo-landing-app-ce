@@ -1,0 +1,12 @@
+{
+  "contact_title": "צרו קשר",
+  "contact_subtitle": "צור קשר עם צוות התמיכה המומחה של JustDo. בקש עזרה, חקור תכונות, או קבע הדגמה עוד היום.",
+  "email_us_title": "שלחו לנו אימייל",
+  "email_us_subtitle": "מעדיפים לשלוח לנו אימייל ישירות? אין בעיה! ניתן להגיע אלינו בכתובות הדוא\"ל הבאות:",
+  "technical_support_email": "תמיכה טכנית: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "בקשות להדגמה, בקשות לתכונות, וכל עניין אחר: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "שלח",
+  "contact_name_placeholder": "שם",
+  "contact_email_placeholder": "דואר אלקטרוני",
+  "contact_message_placeholder": "הודעה"
+}

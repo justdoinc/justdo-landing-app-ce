@@ -1,0 +1,36 @@
+<template name="main_menu">
+  <div class="main-menu">
+    <ul class="main-menu-list">
+      <li class="main-menu-heading">JustDo</li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="sign_in"}}">{{_ "header_sign_in"}}</a></li>
+      {{#unless loginOnlyLayout}}
+        <li class="main-menu-item"><a href="{{i18nRoute route="pricing"}}">{{_ "header_pricing"}}</a></li>
+        <li class="main-menu-item"><a href="{{i18nRoute route="distributors"}}">{{_ "header_distributors"}}</a></li>
+        <li class="main-menu-item"><a href="{{i18nRoute route="news_page"}}">{{_ "header_news"}}</a></li>
+        <li class="main-menu-item"><a href="{{i18nRoute route="blog_page"}}">{{_ "menu_blog"}}</a></li>
+      {{/unless}}
+      <li class="main-menu-item"><a href="{{i18nRoute route="contact"}}">{{_ "header_contact"}}</a></li>
+      <li class="main-menu-heading">{{_ "menu_our_apps"}}</li>
+      <li class="main-menu-item"><a href="https://apps.apple.com/us/app/justdo-go/id1583902022" target="_blank">{{_ "menu_app_store"}}</a></li>
+      <li class="main-menu-item"><a href="https://play.google.com/store/apps/details?id=com.justdo.justdogo&amp;hl=en&amp;gl=US" target="_blank">{{_ "menu_google_store"}}</a></li>
+      <li class="main-menu-heading">{{_ "menu_legal_and_privacy"}}</li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="terms-and-conditions"}}">{{_ "menu_terms_and_conditions"}}</a></li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="privacy-policy"}}">{{_ "menu_privacy_policy"}}</a></li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="cookie-policy"}}">{{_ "menu_cookie_policy"}}</a></li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="copyright-notice"}}">{{_ "menu_copyright_notice"}}</a></li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="trademark-policy"}}">{{_ "menu_trademark_policy"}}</a></li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="source-available-license"}}">{{_ "menu_source_available_license_agreement"}}</a></li>
+      <li class="main-menu-item"><a href="/packages/justdoinc_justdo-legal-docs/docs/data-subject-access-request.pdf" target="_blank">{{_ "menu_access_request_form"}}</a></li>
+      <li class="main-menu-item"><a href="{{i18nRoute route="privacy-shield-notice"}}">{{_ "menu_eu_and_swiss_privacy_shield"}}</a></li>
+      <!--<li class="main-menu-item"><a href="https://www.privacyshield.gov/participant?id=a2zt00000004pbyAAA&status=Active" target="_blank">PrivacyShield.gov Participant Page</a></li>-->
+      <!-- <li class="main-menu-item"><a href="{{i18nRoute route="on-premises-terms-and-conditions"}}">{{_ "menu_on_prem_terms_and_conditions"}}</a></li> -->
+      {{#unless loginOnlyLayout}}
+        <li class="main-menu-heading">{{_ "menu_services"}}</li>
+        <li class="main-menu-item"><a href={{i18nRoute route="support_page"}}>{{_ "support_center_title"}}</a></li>
+        <li class="main-menu-item"><a href={{i18nRoute route="plugins_store"}}>{{_ "plugin_store_title"}}</a></li>
+        <li class="main-menu-item"><a href={{i18nRoute route="partners"}}>{{_ "menu_partners"}}</a></li>
+      {{/unless}}
+    </ul>
+  </div>
+  <div class="main-menu-backdrop"></div>
+</template>

@@ -1,0 +1,40 @@
+<template name="contact">
+  <div class="contact-page-content">
+    <h1 class="title">{{_ "contact_title"}}</h1>
+    <p>{{_ "contact_subtitle"}}</p>
+    {{#if isSmtpConfigured}}
+      <div class="request-contact-form-container mt-4">
+        <form class="form request-contact-form" role="form">
+          {{#with queryParams}}
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" placeholder="{{_ "contact_name_placeholder"}}" value="{{name}}">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" placeholder="{{_ "contact_email_placeholder"}}" value="{{email}}">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" placeholder="{{_ "contact_message_placeholder"}}" rows="9" value="{{message}}"></textarea>
+            </div>
+          <!--<div class="form-group">
+            <div class="form-check">
+              <input id="agree-terms-checkbox" type="checkbox" class="form-check-input" name="agree_terms">
+              <label for="agree-terms-checkbox" class="form-check-label">I agree to JustDo <a href="/terms-and-conditions" class="terms-conditions-modal" target="_blank">Terms and Conditions</a> and <a href="/privacy-policy" class="privacy-policy-modal" target="_blank">Privacy Policy</a></label>
+            </div>
+          </div>-->
+          {{/with}}
+          <button class="send-request btn btn-lg btn-primary btn-block mb-3">{{_ "contact_submit"}}</button>
+        </form>
+      </div>
+      <div class="title border-top mt-4 pt-3">{{_ "email_us_title"}}</div>
+      <p>{{_ "email_us_subtitle"}}</p>
+    {{/if}}
+    <div class="company-contact-info">
+      <div class="row">
+        <div class="col">
+          <p class="mb-0">{{{xssGuard(_ "technical_support_email")}}}</p>
+          <p class="mb-0">{{{xssGuard(_ "demo_request_email")}}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

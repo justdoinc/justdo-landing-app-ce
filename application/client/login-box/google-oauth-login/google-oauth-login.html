@@ -1,0 +1,5 @@
+<template name="login_with_google_oauth">
+  {{#if google_oauth_login_supported}}
+    <button class="google-oauth-login btn btn-lg btn-block mb-3"><span class="icon-google"></span>{{#if $eq mainBoxCaptionMode "sign-in"}}{{_ "sign_in_with_google"}}{{else}}{{_ "sign_up_with_google"}}{{/if}}</button>
+  {{/if}}
+</template>

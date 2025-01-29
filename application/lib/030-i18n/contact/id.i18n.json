@@ -1,0 +1,12 @@
+{
+  "contact_title": "Hubungi Kami",
+  "contact_subtitle": "Hubungi tim dukungan ahli JustDo. Minta bantuan, jelajahi fitur, atau jadwalkan demo hari ini.",
+  "email_us_title": "Email Kami",
+  "email_us_subtitle": "Lebih suka mengirim email langsung kepada kami? Tidak masalah! Anda dapat menghubungi kami melalui alamat email berikut:",
+  "technical_support_email": "Dukungan teknis: <a href=\"mailto:support@justdo.com\">support@justdo.com</a>",
+  "demo_request_email": "Permintaan demo, permintaan fitur, dan hal lainnya: <a href=\"mailto:info@justdo.com\">info@justdo.com</a>",
+  "contact_submit": "Kirim",
+  "contact_name_placeholder": "Nama",
+  "contact_email_placeholder": "Email",
+  "contact_message_placeholder": "Pesan"
+}
