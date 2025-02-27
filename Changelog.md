@@ -1,3 +1,7 @@
+2025.02.19, Version 5.8.2
+
+* Update submodules
+
 2025.02.14, Version 5.8.1
 
 * Update submodules
