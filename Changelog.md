@@ -1,3 +1,11 @@
+2025.03.05, Version 5.8.3
+
+* Update .cursorignore
+
+2025.03.05, Version 5.8.3
+
+* Update .cursorignore
+
 2025.02.19, Version 5.8.2
 
 * Update submodules
