@@ -1,0 +1,3 @@
+{
+  "extra_i18n_instructions": "In this input assume the word \"you\" and its variations like \"yours\" and so on means the plural you.\nFor example if you encounter a phrase such as: \"Source-available, fully customizable solution that you, and your clients, will simply fall in love with.\" - The \"You\" is plural, DON'T translate it to its singular form!\n\nWhen we talk about JustDo's design, such as in: \"JustDo's design is highly modular\" we mean its technical not visual design."
+}

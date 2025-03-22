@@ -83,6 +83,7 @@ justdoinc:justdo-news-data
 base64@1.0.12
 justdoinc:justdo-i18n
 tap:i18n
+justdoinc:justdo-ai-kit
 justdoinc:jd-api
 justdoinc:justdo-snackbar
 justdoinc:justdo-i18n-routes

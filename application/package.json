@@ -5,8 +5,8 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "@babel/runtime": "^7.23.5",
-    "aws-sdk": "^2.1508.0",
+    "@babel/runtime": "^7.26.10",
+    "aws-sdk": "^2.1692.0",
     "babel-runtime": "^6.26.0",
     "bcrypt": "^5.1.1",
     "bluebird": "^3.7.2",
@@ -14,9 +14,16 @@
     "colors": "~1.1.2",
     "core-js": "^2.6.12",
     "fibers": "^5.0.3",
-    "meteor-node-stubs": "^1.2.12",
+    "mathjs": "^13.2.3",
+    "meteor-node-stubs": "^1.2.13",
     "mysql": "^2.18.1",
     "swiper": "^11.1.4",
     "webfontloader": "~1.6.28"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "install": "^0.13.0",
+    "npm": "^11.2.0",
+    "string-width": "^4.2.3"
   }
 }

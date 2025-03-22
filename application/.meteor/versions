@@ -68,6 +68,7 @@ justdoinc:bootstrap-themes@1.0.0
 justdoinc:jd-api@1.0.0
 justdoinc:jquery-migrate@1.0.0
 justdoinc:justdo-accounts@1.0.0
+justdoinc:justdo-ai-kit@1.0.0
 justdoinc:justdo-analytics@1.0.0
 justdoinc:justdo-analytics-core-logs@1.0.0
 justdoinc:justdo-avatar@1.0.0
@@ -84,11 +85,13 @@ justdoinc:justdo-legal-docs-versions@1.0.0
 justdoinc:justdo-login-state@1.0.0
 justdoinc:justdo-login-target@1.0.0
 justdoinc:justdo-min-mobile-version@1.0.0
+justdoinc:justdo-new-project-templates@1.0.0
 justdoinc:justdo-news@1.0.0
 justdoinc:justdo-news-data@1.0.0
 justdoinc:justdo-page-title@1.1.0
 justdoinc:justdo-plugin-store@1.0.0
 justdoinc:justdo-projects-shared-components@1.0.0
+justdoinc:justdo-projects-templates@1.0.0
 justdoinc:justdo-recaptcha@1.0.0
 justdoinc:justdo-rollbar@1.0.0
 justdoinc:justdo-site-admins@1.0.0
